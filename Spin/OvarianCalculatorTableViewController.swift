@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OvarianCalculatorTableViewController: UITableViewController {
+class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDelegate {
    
     
     @IBOutlet weak var resultDigitLabel: UILabel!

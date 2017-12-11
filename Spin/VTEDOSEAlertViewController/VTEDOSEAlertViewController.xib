@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BMIAlertViewController" customModule="Spin" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VTEDOSEAlertViewController" customModule="Spin" customModuleProvider="target">
             <connections>
                 <outlet property="alertMaskBackground" destination="TJU-qf-UNT" id="afj-Od-QWH"/>
                 <outlet property="alertView" destination="MnE-em-fL1" id="NjJ-1F-nt8"/>
