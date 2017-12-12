@@ -27,6 +27,13 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
     var ultraScanScore = 0
     var menopausal : Menopausal = .premenopausal
     
+    @IBAction func calculateRMI(_ sender: Any) {
+        ovarianCancerCalculator.serumCancer = (NumberFormatter().number(from: serumValueField.text!)?.doubleValue)!
+        ovarianCancerCalculator.menopausalStatus = menopausal.rawValue
+        ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
+       print( String(ovarianCancerCalculator.getRmi()))
+      
+    }
     
     
     @IBAction func ButtonClicked(_ sender: Any) {
@@ -46,39 +53,25 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
         case bilateralButton:
             ultrasonic.bilateral = !currentState
         case postMenopausalButton:
-           preMenopausalButton.isSelected = true
+           postMenopausalButton.isSelected = true
             menopausal = .postmenopausal
             preMenopausalButton.isSelected = false
         case preMenopausalButton:
            preMenopausalButton.isSelected = true
             menopausal = .premenopausal
            postMenopausalButton.isSelected = false
-            ultrasonic.multilocular = !currentState
+            //ultrasonic.multilocular = !currentState
         default:
             print("error")
              }
-        ovarianCancerCalculator.serumCancer = (NumberFormatter().number(from: serumValueField.text!)?.doubleValue)!
-        ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
-            resultDigitLabel.text = String(ovarianCancerCalculator.getRmi())
-        switch ovarianCancerCalculator.getRmi() {
-        case 0...25:
-            resultBadgeLabel.backgroundColor = UIColor.green
-             resultBadgeLabel.text = "Low Risk"
-        case 25..<200:
-            resultBadgeLabel.backgroundColor = UIColor.orange
-            resultBadgeLabel.text = "intermediate risk"
-        case 200...:
-            resultBadgeLabel.backgroundColor = UIColor.red
-            resultBadgeLabel.text = "high risk"
-            
-        default:
-            print("error")
-        }
+       
+       
        
         
         
     }
     
+    @IBOutlet weak var calculateRMI: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         ultrasonic = UltraSoundScan()

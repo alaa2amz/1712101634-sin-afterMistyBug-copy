@@ -78,7 +78,7 @@ class VTEDOSEAlertViewController: UIViewController {
             }
             
         }
-        else if let nib = podBundle.loadNibNamed("VTEDOSEAlertViewControllerAlert", owner: self, options: nil) as [AnyObject]?{
+        else if let nib = podBundle.loadNibNamed("VTEDOSEAlertViewController", owner: self, options: nil) as [AnyObject]?{
             return nib
         }
         else{

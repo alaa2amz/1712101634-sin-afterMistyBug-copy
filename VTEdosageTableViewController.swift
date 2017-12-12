@@ -20,6 +20,7 @@ class VTEdosageTableViewController: UITableViewController,UITextFieldDelegate {
         textField.returnKeyType = .done
         return true
     }
+    /*
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool  {
         
         let currentCharacterCount = textField.text?.count ?? 0
@@ -29,9 +30,34 @@ class VTEdosageTableViewController: UITableViewController,UITextFieldDelegate {
         let newLength = currentCharacterCount + string.count - range.length
         return newLength <= 3
     }
+ */
     @IBAction func calculateVteDosage(_ sender: Any) {
+        var weight = 0.0
+        var dosage = 0.0
+        if let enteredWeight = NumberFormatter().number(from: weightTextFeild.text!)?.doubleValue
+            
+        {
+       weight = enteredWeight
+            
+        }
+        
+        switch weight {
+        case 0...50:
+            dosage = 20
+        case 51...90:
+            dosage = 40
+        case 91...170:
+            dosage = 60
+        case 171...:
+            dosage = 0.6
+        default:
+            print("some error entered")
+        }
+        let vc = VTEDOSEAlertViewController(result: "\(dosage) mg\ndaily", resultComments: "tyuio")
+        self.present(vc, animated: true, completion: nil)
+        
     }
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 

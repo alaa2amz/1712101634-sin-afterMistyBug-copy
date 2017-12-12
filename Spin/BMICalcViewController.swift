@@ -111,7 +111,7 @@ class BMICalcViewController: BaseViewController {
         } else {
             let result = stateController.getBMIResults(weight: weight, height: height, isPregnant: isPregnant)
             
-            let vc = BMIAlertViewController(result: result.result!, resultComments: result.resultComments!)
+            let vc = BMIAlertViewController(result: String((weight/pow(height,2.0))*10000)+" kg/m²", resultComments: result.resultComments!)
             vc.isFemale = !isMale
             vc.isPregnant = self.isPregnant
             vc.resultValue = result.value!

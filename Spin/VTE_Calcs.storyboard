@@ -1379,7 +1379,7 @@ mg/dL:</string>
         <scene sceneID="aIj-du-4K2">
             <objects>
                 <tableViewController storyboardIdentifier="ovarianCalculator" title="ovarian" id="59b-PJ-UQo" customClass="OvarianCalculatorTableViewController" customModule="Spin" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7aN-P5-IZp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7aN-P5-IZp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1708,11 +1708,10 @@ mg/dL:</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fc-bv-W1n">
-                                                    <rect key="frame" x="16" y="50.5" width="280" height="27.5"/>
+                                                    <rect key="frame" x="16" y="50" width="288" height="28"/>
                                                     <color key="backgroundColor" red="0.28801721334457397" green="0.40841913223266602" blue="0.66785335540771484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27.5" id="5be-vD-nAO"/>
-                                                        <constraint firstAttribute="width" constant="280" id="XZf-xr-z7s"/>
                                                     </constraints>
                                                     <state key="normal" title="RISK OF MALIGNANCY INDEX (RMI I)">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1725,44 +1724,20 @@ mg/dL:</string>
                                                             <size key="value" width="2" height="5"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="calculateRMI:" destination="59b-PJ-UQo" eventType="touchUpInside" id="J96-F8-scg"/>
+                                                    </connections>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QxE-BE-AfY">
-                                                    <rect key="frame" x="22" y="4" width="277.5" height="43.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INDEX: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-I8-BEM">
-                                                            <rect key="frame" x="0.0" y="11.5" width="58.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Y3-G7-Ho8">
-                                                            <rect key="frame" x="60.5" y="11.5" width="40" height="20.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="40" id="24N-tF-im2"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please enter antigen number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcz-Hx-X3y">
-                                                            <rect key="frame" x="102.5" y="0.0" width="175" height="43.5"/>
-                                                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="DXc-5I-aIJ"/>
-                                                                <constraint firstAttribute="width" constant="175" id="k7t-sG-0JU"/>
-                                                                <constraint firstAttribute="height" constant="43" id="xuP-Hk-cJc"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
+                                                    <rect key="frame" x="141" y="17" width="38" height="19"/>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="QxE-BE-AfY" firstAttribute="centerX" secondItem="EUT-1Q-Go1" secondAttribute="centerX" id="Abx-Vw-dbO"/>
+                                                <constraint firstItem="1fc-bv-W1n" firstAttribute="top" secondItem="QxE-BE-AfY" secondAttribute="bottom" constant="14" id="H3v-da-7wT"/>
                                                 <constraint firstItem="QxE-BE-AfY" firstAttribute="centerY" secondItem="EUT-1Q-Go1" secondAttribute="centerY" constant="-20" id="NyM-OC-8Q7"/>
                                                 <constraint firstItem="1fc-bv-W1n" firstAttribute="leading" secondItem="EUT-1Q-Go1" secondAttribute="leadingMargin" id="me0-xe-l4Q"/>
+                                                <constraint firstItem="QxE-BE-AfY" firstAttribute="leading" secondItem="EUT-1Q-Go1" secondAttribute="leading" constant="141" id="nbC-xj-GzR"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="1fc-bv-W1n" secondAttribute="trailing" id="x0R-qn-aJq"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="1fc-bv-W1n" secondAttribute="bottom" constant="3" id="zJX-29-VFq"/>
                                             </constraints>
@@ -1791,8 +1766,6 @@ mg/dL:</string>
                         <outlet property="multilocularButton" destination="MKN-jG-tgs" id="ZQ6-wj-1pf"/>
                         <outlet property="postMenopausalButton" destination="THq-Jr-ckL" id="9H3-Ln-zCn"/>
                         <outlet property="preMenopausalButton" destination="jiz-VS-r65" id="8qs-YV-cqI"/>
-                        <outlet property="resultBadgeLabel" destination="xcz-Hx-X3y" id="DJu-v0-eBe"/>
-                        <outlet property="resultDigitLabel" destination="4Y3-G7-Ho8" id="KqR-Ne-AA6"/>
                         <outlet property="serumValueField" destination="uSF-bT-c1c" id="VcW-sr-iwv"/>
                         <outlet property="solidAreasButton" destination="kIg-xJ-seG" id="gz5-Mb-BO2"/>
                     </connections>
