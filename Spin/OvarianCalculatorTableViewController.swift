@@ -9,7 +9,7 @@
 import UIKit
 
 class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDelegate {
-   
+   var limit = 50
     
     @IBOutlet weak var resultDigitLabel: UILabel!
     @IBOutlet weak var serumValueField: UITextField!
@@ -71,7 +71,16 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
         
     }
     
-    @IBOutlet weak var calculateRMI: UIButton!
+    @IBAction func calc(_ sender: Any) {
+        ovarianCancerCalculator.serumCancer = (NumberFormatter().number(from: serumValueField.text!)?.doubleValue)!
+        ovarianCancerCalculator.menopausalStatus = menopausal.rawValue
+        ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
+        print( String(ovarianCancerCalculator.getRmi()))
+        let rmi = ovarianCancerCalculator.getRmi()
+        let vc = RMIAlertViewController(result: rmi<limit ? "fffff":"MMMMMM", resultComments: "tyuio")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ultrasonic = UltraSoundScan()

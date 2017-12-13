@@ -11,6 +11,9 @@
 		000572341FDEF665004B070A /* VTEDOSEAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000572321FDEF664004B070A /* VTEDOSEAlertViewController.xib */; };
 		000572351FDEF665004B070A /* VTEDOSEAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000572331FDEF665004B070A /* VTEDOSEAlertViewController.swift */; };
 		00095F291FD6F77B00056EE3 /* CornerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00095F281FD6F77B00056EE3 /* CornerCell.swift */; };
+		0075A42D1FE15A440034362E /* RMIAlertViewController in Resources */ = {isa = PBXBuildFile; fileRef = 0075A42C1FE15A440034362E /* RMIAlertViewController */; };
+		0075A4331FE15F980034362E /* RMIAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0075A4311FE15F970034362E /* RMIAlertViewController.swift */; };
+		0075A4341FE15F980034362E /* RMIAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0075A4321FE15F980034362E /* RMIAlertViewController.xib */; };
 		61A94DE51FDC1709003805DB /* OvarianCalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A94DE41FDC1709003805DB /* OvarianCalculatorTableViewController.swift */; };
 		61A94DE71FDC285E003805DB /* ovarianCancerGuideLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A94DE61FDC285E003805DB /* ovarianCancerGuideLogic.swift */; };
 		61C22BB51FDB564B0022319D /* CollapsibleTableSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C22BB31FDB564B0022319D /* CollapsibleTableSectionViewController.swift */; };
@@ -180,6 +183,9 @@
 		000572321FDEF664004B070A /* VTEDOSEAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VTEDOSEAlertViewController.xib; sourceTree = "<group>"; };
 		000572331FDEF665004B070A /* VTEDOSEAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTEDOSEAlertViewController.swift; sourceTree = "<group>"; };
 		00095F281FD6F77B00056EE3 /* CornerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerCell.swift; sourceTree = "<group>"; };
+		0075A42C1FE15A440034362E /* RMIAlertViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RMIAlertViewController; sourceTree = "<group>"; };
+		0075A4311FE15F970034362E /* RMIAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMIAlertViewController.swift; sourceTree = "<group>"; };
+		0075A4321FE15F980034362E /* RMIAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMIAlertViewController.xib; sourceTree = "<group>"; };
 		593B87FA8CE7C5CDD45C7DCF /* Pods-Spin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spin/Pods-Spin.release.xcconfig"; sourceTree = "<group>"; };
 		61A94DE41FDC1709003805DB /* OvarianCalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvarianCalculatorTableViewController.swift; sourceTree = "<group>"; };
 		61A94DE61FDC285E003805DB /* ovarianCancerGuideLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ovarianCancerGuideLogic.swift; sourceTree = "<group>"; };
@@ -429,6 +435,7 @@
 		6BAEFC521E290F0900F05F50 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				0075A42C1FE15A440034362E /* RMIAlertViewController */,
 				C53A3F7D1E50EB6E009C4B42 /* Question Alert */,
 				C513E4071E3FCD9E002D405E /* ABL Alert */,
 				C513E3FB1E3FAED9002D405E /* GFR Alert */,
@@ -453,6 +460,8 @@
 				61C22BAC1FDB4FD10022319D /* CollapsibleTableSectionViewController.h */,
 				61C22BAD1FDB4FD10022319D /* CollapsibleTableSectionViewController.swift */,
 				61C22BAE1FDB4FD10022319D /* CollapsibleTableViewHeader.swift */,
+				0075A4311FE15F970034362E /* RMIAlertViewController.swift */,
+				0075A4321FE15F980034362E /* RMIAlertViewController.xib */,
 				AB3D0D731E26EA5A00563EEE /* Spin */,
 				AB3D0D721E26EA5A00563EEE /* Products */,
 				568EC482C5F1B29B981B3BAE /* Pods */,
@@ -1053,12 +1062,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				000572341FDEF665004B070A /* VTEDOSEAlertViewController.xib in Resources */,
+				0075A42D1FE15A440034362E /* RMIAlertViewController in Resources */,
 				C543A61C1E3D073F00438D04 /* BMIAlertViewController.xib in Resources */,
 				C5D3E2DC1E462C2B00EA53B9 /* DropdownViewController.xib in Resources */,
 				C513E40D1E3FCDDE002D405E /* ABLAlertViewController.xib in Resources */,
 				C53A3F831E50EBD4009C4B42 /* QuestionAlertVC.xib in Resources */,
 				C5D3E2E81E462C6300EA53B9 /* DropTableViewCell.xib in Resources */,
 				6B70A9121E295902005DB256 /* Nexa Bold.otf in Resources */,
+				0075A4341FE15F980034362E /* RMIAlertViewController.xib in Resources */,
 				6B70A9131E295902005DB256 /* Nexa Light.otf in Resources */,
 				6BAEFC541E290F1600F05F50 /* AlertViewController.xib in Resources */,
 				C5C4613E1E3C9DCB001CFFA1 /* VTE_Calcs.storyboard in Resources */,
@@ -1166,6 +1177,7 @@
 				C504E04E1E4DC2460007406F /* NSFileManager+Haneke.swift in Sources */,
 				C5DF2A231E4DF36700CADE50 /* NewsStateController.swift in Sources */,
 				C504E0511E4DC2460007406F /* String+Haneke.swift in Sources */,
+				0075A4331FE15F980034362E /* RMIAlertViewController.swift in Sources */,
 				C578BA781E61C7CB002C274C /* NewsletterTVC.swift in Sources */,
 				C543A61B1E3D073F00438D04 /* BMIAlertViewController.swift in Sources */,
 				C543A6231E3D18E400438D04 /* GFRCalcViewController.swift in Sources */,
