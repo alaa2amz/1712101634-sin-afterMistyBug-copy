@@ -8,8 +8,32 @@
 
 import UIKit
 
-class CalculatorsListViewController: UIViewController {
-    //MARK:- IBOutlets 
+class CalculatorsListViewController: UIViewController,UIGestureRecognizerDelegate {
+    
+    func didTap(sender: Any) {
+        print("hhhhhoooo")
+            performSegue(withIdentifier: "fromCalcsToVTE", sender: self)
+     
+        
+      
+    }
+    
+   
+    
+    
+    @IBOutlet weak var vteView: UIView!
+    @IBOutlet weak var bmiView: UIView!
+    @IBOutlet weak var gfrView: UIView!
+    @IBOutlet weak var ablView: UIView!
+    @IBOutlet weak var rmiView: UIView!
+    var vteViewTap = UITapGestureRecognizer()
+    var bmiViewTap = UITapGestureRecognizer()
+     var gfrViewTap = UITapGestureRecognizer()
+     var ablViewTap = UITapGestureRecognizer()
+     var rmiViewTap = UITapGestureRecognizer()
+    
+    
+    //MARK:- IBOutlets
     @IBOutlet weak var btnVTE: UIButton!
     @IBOutlet weak var btnBMI: UIButton!
     @IBOutlet weak var btnGFR: UIButton!
@@ -24,15 +48,33 @@ class CalculatorsListViewController: UIViewController {
     //MARK:- UI Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+       self.view.isUserInteractionEnabled = true
+        vteView.isUserInteractionEnabled = true
+        vteViewTap.delegate = self
+        bmiViewTap.delegate = self
+        gfrViewTap.delegate = self
+        ablViewTap.delegate = self
+        rmiViewTap.delegate = self
+       
+        rmiViewTap.addTarget(self, action: #selector(didTap))
+        vteView.addGestureRecognizer(vteViewTap)
+        bmiView.addGestureRecognizer(bmiViewTap)
+        gfrView.addGestureRecognizer(gfrViewTap)
+        ablView.addGestureRecognizer(gfrViewTap)
+        rmiView.addGestureRecognizer(rmiViewTap)
 
         // Do any additional setup after loading the view.
         configurePageTitle()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+        
+    
+    
+    
+    
     
     //MARK:- Configuratiuon
     func configurePageTitle(){
@@ -43,7 +85,10 @@ class CalculatorsListViewController: UIViewController {
         label.font = UIFont(name: "Nexa Light", size: 22.0)
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.white
-        label.text = "VTE risk assesment..."
+        label.autoresizingMask = .flexibleWidth
+        label.numberOfLines = 0
+        label.minimumScaleFactor = 0.5
+        label.text = "VTE risk assesment\nand other calculatiors"
         
         self.navigationItem.titleView = label
     }

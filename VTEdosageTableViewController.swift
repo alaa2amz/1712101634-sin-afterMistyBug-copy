@@ -53,7 +53,7 @@ class VTEdosageTableViewController: UITableViewController,UITextFieldDelegate {
         default:
             print("some error entered")
         }
-        let vc = VTEDOSEAlertViewController(result: "\(dosage) mg\ndaily", resultComments: "tyuio")
+        let vc = VTEDOSEAlertViewController(result: "\(String(format:"%.0f",dosage)) mg\ndaily", resultComments: "tyuio")
         self.present(vc, animated: true, completion: nil)
         
     }

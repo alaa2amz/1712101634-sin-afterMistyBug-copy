@@ -505,12 +505,13 @@
                                     <constraint firstAttribute="width" constant="22" id="wyj-ah-U8k"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV6-DE-55p">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV6-DE-55p">
                                 <rect key="frame" x="195" y="28" width="109" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Tkv-3J-zCR"/>
                                     <constraint firstAttribute="width" constant="109" id="wyg-NC-Vys"/>
                                 </constraints>
+                                <state key="normal" image="direct_button copy"/>
                                 <connections>
                                     <action selector="btnMattersClicked:" destination="N26-4X-BeG" eventType="touchUpInside" id="tGZ-bH-MFe"/>
                                 </connections>
@@ -636,6 +637,7 @@
     <resources>
         <image name="about_icon" width="260" height="170"/>
         <image name="bg_home" width="375" height="665"/>
+        <image name="direct_button copy" width="253" height="58"/>
         <image name="ic_case_studies" width="135" height="89"/>
         <image name="ic_check" width="10" height="10"/>
         <image name="ic_ecme" width="135" height="89"/>
@@ -643,7 +645,7 @@
         <image name="ic_my_corner" width="135" height="89"/>
         <image name="ic_news" width="135" height="89"/>
         <image name="ic_red_arrow" width="25" height="25"/>
-        <image name="ic_sponser" width="203" height="49"/>
+        <image name="ic_sponser" width="204" height="67"/>
         <image name="ic_stay_updated" width="135" height="89"/>
         <image name="ic_videos" width="137" height="89"/>
         <image name="ic_vte" width="135" height="89"/>

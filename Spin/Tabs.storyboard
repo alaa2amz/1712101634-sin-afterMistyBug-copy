@@ -43,6 +43,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VTE risk assesment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUe-fG-tYN">
                                                         <rect key="frame" x="0.0" y="0.0" width="226" height="47"/>
+                                                        <gestureRecognizers/>
                                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -257,10 +258,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="ablView" destination="LBy-Fg-szh" id="85v-5Q-kYm"/>
+                        <outlet property="bmiView" destination="7pq-bZ-XOL" id="SCG-wf-jpT"/>
                         <outlet property="btnABL" destination="zD2-ax-hS5" id="5k7-uZ-zQ0"/>
                         <outlet property="btnBMI" destination="sm3-GW-wOB" id="Luo-VW-Qbh"/>
                         <outlet property="btnGFR" destination="1fZ-Om-UF9" id="ptq-3n-8CK"/>
                         <outlet property="btnVTE" destination="pyx-lE-HkW" id="A9D-ka-0Mb"/>
+                        <outlet property="gfrView" destination="06T-Wx-Mzi" id="fFR-36-fza"/>
+                        <outlet property="rmiView" destination="pCp-B5-oSf" id="lvS-aX-I8c"/>
+                        <outlet property="vteView" destination="Ybq-i1-ECg" id="D3Q-Hf-Fij"/>
                         <segue destination="MpX-em-auR" kind="show" identifier="fromCalcsToVTE" id="3qg-Bc-26t"/>
                         <segue destination="zEL-Ol-2vh" kind="show" identifier="fromCalcsToBMI" id="klX-bH-cFX"/>
                         <segue destination="jMN-EY-rjR" kind="show" identifier="fromCalcsToGFR" id="21X-No-vy0"/>
@@ -268,8 +274,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdo-tk-Isg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="K1t-ch-Zp8" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="DyX-tO-u8w">
+                    <connections>
+                        <action selector="tap:" destination="K1t-ch-Zp8" id="K5c-is-CyJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2703.75" y="55.985915492957744"/>
+            <point key="canvasLocation" x="2704" y="52"/>
         </scene>
         <!--SideMenu-->
         <scene sceneID="Nft-Zu-MBg">

@@ -109,12 +109,13 @@ class BMICalcViewController: BaseViewController {
         if weight == 0.0 || height == 0.0 {
             self.show(error: "Please Enter Valid Values")
         } else {
-            let result = stateController.getBMIResults(weight: weight, height: height, isPregnant: isPregnant)
-            
-            let vc = BMIAlertViewController(result: String((weight/pow(height,2.0))*10000)+" kg/m²", resultComments: result.resultComments!)
+            let result = stateController.getBMIResults(weight: Float(weight), height: Float(height), isPregnant: isPregnant)
+            let bmi = weight/pow(height/100,2.0)
+            let vc = BMIAlertViewController(result: String(format:"%.2f",bmi) + " kg/m²", resultComments: result.resultComments!)
             vc.isFemale = !isMale
             vc.isPregnant = self.isPregnant
-            vc.resultValue = result.value!
+            vc.resultValue = bmi
+            
             
             self.present(vc, animated: true, completion: nil)
         }

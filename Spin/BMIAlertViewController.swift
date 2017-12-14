@@ -24,7 +24,7 @@ class BMIAlertViewController: UIViewController {
     
     var isFemale: Bool = false
     var isPregnant: Bool = false
-    var resultValue: Float = 0.0 {
+    var resultValue: Float!  {
         didSet {
             setData(value: resultValue)
         }

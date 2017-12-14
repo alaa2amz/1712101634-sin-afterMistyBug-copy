@@ -48,7 +48,11 @@ class VTECalculatorViewController: UITableViewController, CalculateDelegate {
         label.font = UIFont(name: "Nexa Light", size: 22.0)
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.white
-        label.text = "VTE risk assesment..."
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        label.autoresizingMask = .flexibleWidth
+        // in calculator itself
+        label.text = "VTE risk assesment"
         
         self.navigationItem.titleView = label
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_refresh"), style: .plain, target: self, action: #selector(btnRefreshTapped(_:)))

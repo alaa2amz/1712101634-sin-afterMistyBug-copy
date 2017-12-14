@@ -11,10 +11,12 @@ import SideMenu
 
 class SideMenuTableViewController: UITableViewController {
     //MARK: - variables
+    let delegate = UIApplication.shared.delegate
     let profileCellIdentifier = "ProfileCell"
     let optionCellIdentifier = "OptionsCell"
     let HOME_SEGUE = "fromTabBarToHome"
     
+    @IBOutlet weak var userName: UILabel!
     var viewControllerForPresentedMenu: UIViewController? {
         get {
             return SideMenuManager.menuLeftNavigationController?.presentingViewController != nil ? SideMenuManager.menuLeftNavigationController?.presentingViewController : SideMenuManager.menuRightNavigationController?.presentingViewController
@@ -26,6 +28,11 @@ class SideMenuTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.tableFooterView = UIView()
+      
+        userName.text = "all"
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

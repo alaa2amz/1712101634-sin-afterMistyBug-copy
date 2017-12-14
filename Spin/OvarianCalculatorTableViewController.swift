@@ -77,9 +77,17 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
         ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
         print( String(ovarianCancerCalculator.getRmi()))
         let rmi = ovarianCancerCalculator.getRmi()
-        let vc = RMIAlertViewController(result: rmi<limit ? "fffff":"MMMMMM", resultComments: "tyuio")
+        let vc = RMIAlertViewController(result: rmi<limit ? "Benign":"Malignt", resultComments: "tyuio")
         self.present(vc, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func tap(_ sender: Any) {
+    
+    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
