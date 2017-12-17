@@ -381,6 +381,15 @@
 			path = VTEDOSEAlertViewController;
 			sourceTree = "<group>";
 		};
+		0020893B1FE681C4002EC6C9 /* RMI */ = {
+			isa = PBXGroup;
+			children = (
+				61A94DE41FDC1709003805DB /* OvarianCalculatorTableViewController.swift */,
+				61A94DE61FDC285E003805DB /* ovarianCancerGuideLogic.swift */,
+			);
+			name = RMI;
+			sourceTree = "<group>";
+		};
 		568EC482C5F1B29B981B3BAE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,8 +541,6 @@
 				AB3D0D801E26EA5B00563EEE /* LaunchScreen.storyboard */,
 				6BAEFC491E290BB400F05F50 /* Tabs.storyboard */,
 				C5C4613D1E3C9DCB001CFFA1 /* VTE_Calcs.storyboard */,
-				61A94DE41FDC1709003805DB /* OvarianCalculatorTableViewController.swift */,
-				61A94DE61FDC285E003805DB /* ovarianCancerGuideLogic.swift */,
 				C5493E331E44AE6300ED2D9C /* SideMenu.storyboard */,
 			);
 			name = Views;
@@ -864,6 +871,7 @@
 				C543A6131E3CDBB600438D04 /* BMI */,
 				C543A6211E3D18C000438D04 /* GFR */,
 				C513E4001E3FBFC5002D405E /* ABL */,
+				0020893B1FE681C4002EC6C9 /* RMI */,
 			);
 			name = Calculators;
 			sourceTree = "<group>";
@@ -1419,7 +1427,7 @@
 				INFOPLIST_FILE = Spin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.intermarkcorp.spin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intermarkcorp2.spin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Spin/Spin-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1440,7 +1448,7 @@
 				INFOPLIST_FILE = Spin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.intermarkcorp.spin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intermarkcorp2.spin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Spin/Spin-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

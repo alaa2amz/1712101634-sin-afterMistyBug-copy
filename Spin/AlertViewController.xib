@@ -123,7 +123,7 @@
     <resources>
         <image name="ant_2_1" width="655" height="330"/>
         <image name="ant_2_2" width="655" height="505"/>
-        <image name="vte_footer" width="452" height="170"/>
+        <image name="vte_footer" width="609" height="135"/>
         <image name="vte_title" width="540" height="79"/>
     </resources>
 </document>

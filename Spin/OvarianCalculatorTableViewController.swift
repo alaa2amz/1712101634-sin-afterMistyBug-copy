@@ -9,8 +9,9 @@
 import UIKit
 
 class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDelegate {
-   var limit = 50
-    
+   
+   
+    //MARK: iB Outlets
     @IBOutlet weak var resultDigitLabel: UILabel!
     @IBOutlet weak var serumValueField: UITextField!
     @IBOutlet weak var resultBadgeLabel: UILabel!
@@ -21,20 +22,27 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
     @IBOutlet weak var bilateralButton: UIButton!
     @IBOutlet weak var postMenopausalButton: UIButton!
     @IBOutlet weak var preMenopausalButton: UIButton!
-    
+    //MARK: iVars
+     var limit = 50
     var ovarianCancerCalculator : ovarianCancerGuideLogic!
     var ultrasonic : UltraSoundScan!
     var ultraScanScore = 0
     var menopausal : Menopausal = .premenopausal
+    //MARK: alert implemention
+  //  let alertController = UIAlertController(title: "Warning", message: "Please Enter Valid\nSERUM Cancer Antigen Value", preferredStyle: .alert)
+  //  let alertAction = UIAlertAction(title: "Please Enter Valid\nSERUM Cancer Antigen Value", style: .default, handler: nil)
     
-    @IBAction func calculateRMI(_ sender: Any) {
-        ovarianCancerCalculator.serumCancer = (NumberFormatter().number(from: serumValueField.text!)?.doubleValue)!
-        ovarianCancerCalculator.menopausalStatus = menopausal.rawValue
-        ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
-       print( String(ovarianCancerCalculator.getRmi()))
-      
-    }
     
+    
+//    //MARK: iB Actions
+//    @IBAction func calculateRMI(_ sender: Any) {
+//        ovarianCancerCalculator.serumCancer = (NumberFormatter().number(from: serumValueField.text!)?.doubleValue)!
+//        ovarianCancerCalculator.menopausalStatus = menopausal.rawValue
+//        ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
+//       print( String(ovarianCancerCalculator.getRmi()))
+//
+//    }
+//    
     
     @IBAction func ButtonClicked(_ sender: Any) {
          print (preMenopausalButton.state)
@@ -72,6 +80,7 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
     }
     
     @IBAction func calc(_ sender: Any) {
+       // present(alertController, animated: true, completion: nil)
         ovarianCancerCalculator.serumCancer = (NumberFormatter().number(from: serumValueField.text!)?.doubleValue)!
         ovarianCancerCalculator.menopausalStatus = menopausal.rawValue
         ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
@@ -82,15 +91,14 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
     }
     
     
-    @IBAction func tap(_ sender: Any) {
-    
-    }
+   
     
     
-    
+    //MARK: loading methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //alertController.addAction(alertAction)
         ultrasonic = UltraSoundScan()
         preMenopausalButton.isSelected = true
         ovarianCancerCalculator = ovarianCancerGuideLogic(ultraSoundScore: ultraScanScore, menopausalStatus: menopausal, serumCancer: (NumberFormatter().number(from: serumValueField.text!)?.doubleValue)!)

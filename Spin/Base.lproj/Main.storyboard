@@ -481,35 +481,19 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sponser" translatesAutoresizingMaskIntoConstraints="NO" id="ng1-QD-JeL">
-                                <rect key="frame" x="5" y="28" width="136" height="32"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_sponser" translatesAutoresizingMaskIntoConstraints="NO" id="ng1-QD-JeL">
+                                <rect key="frame" x="5" y="28" width="136" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="6z4-4M-F0V"/>
+                                    <constraint firstAttribute="width" secondItem="ng1-QD-JeL" secondAttribute="height" multiplier="17:4" id="EQk-jH-yEf"/>
                                     <constraint firstAttribute="height" constant="32" id="zGY-05-Vpt"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VTE Matters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0Q-Vk-Fgv">
-                                <rect key="frame" x="195" y="34" width="87" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV6-DE-55p">
+                                <rect key="frame" x="195" y="28" width="109" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="MWW-4d-pTL"/>
-                                    <constraint firstAttribute="height" constant="32" id="f83-ZI-QMJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_red_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="SZO-ys-JfN">
-                                <rect key="frame" x="282" y="34" width="22" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="Vf5-Ps-FQk"/>
-                                    <constraint firstAttribute="width" constant="22" id="wyj-ah-U8k"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV6-DE-55p">
-                                <rect key="frame" x="195" y="28" width="109" height="32"/>
-                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DV6-DE-55p" secondAttribute="height" multiplier="109:32" id="JNG-lh-TDQ"/>
                                     <constraint firstAttribute="height" constant="32" id="Tkv-3J-zCR"/>
-                                    <constraint firstAttribute="width" constant="109" id="wyg-NC-Vys"/>
                                 </constraints>
                                 <state key="normal" image="direct_button copy"/>
                                 <connections>
@@ -519,7 +503,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SZO-ys-JfN" firstAttribute="trailing" secondItem="Pcv-fe-eKX" secondAttribute="trailingMargin" id="2yA-qs-Jjo"/>
                             <constraint firstItem="uC6-KG-tZv" firstAttribute="top" secondItem="Pcv-fe-eKX" secondAttribute="top" id="5IH-gF-cwb"/>
                             <constraint firstItem="1fr-pX-iIj" firstAttribute="top" secondItem="xRt-6o-Ap6" secondAttribute="bottom" constant="20" id="5Zj-xf-4CH"/>
                             <constraint firstAttribute="trailing" secondItem="uC6-KG-tZv" secondAttribute="trailing" id="BB0-bu-bJE"/>
@@ -527,13 +510,11 @@
                             <constraint firstItem="DV6-DE-55p" firstAttribute="trailing" secondItem="Pcv-fe-eKX" secondAttribute="trailingMargin" id="CXZ-DJ-wkU"/>
                             <constraint firstItem="DV6-DE-55p" firstAttribute="top" secondItem="Rgl-tU-nec" secondAttribute="bottom" constant="8" id="FAO-G2-jHT"/>
                             <constraint firstItem="ng1-QD-JeL" firstAttribute="top" secondItem="Rgl-tU-nec" secondAttribute="bottom" constant="8" id="P9i-ir-8Zz"/>
-                            <constraint firstItem="SZO-ys-JfN" firstAttribute="leading" secondItem="N0Q-Vk-Fgv" secondAttribute="trailing" id="Q4r-FS-exC"/>
-                            <constraint firstItem="N0Q-Vk-Fgv" firstAttribute="top" secondItem="Rgl-tU-nec" secondAttribute="bottom" constant="14" id="ciY-35-mL0"/>
-                            <constraint firstItem="SZO-ys-JfN" firstAttribute="top" secondItem="Rgl-tU-nec" secondAttribute="bottom" constant="14" id="fy6-2G-SLi"/>
                             <constraint firstItem="uC6-KG-tZv" firstAttribute="leading" secondItem="Pcv-fe-eKX" secondAttribute="leading" id="ghm-Ga-P5P"/>
                             <constraint firstItem="1fr-pX-iIj" firstAttribute="top" secondItem="uC6-KG-tZv" secondAttribute="bottom" id="qIj-mb-2Ht"/>
                             <constraint firstItem="xRt-6o-Ap6" firstAttribute="width" secondItem="Pcv-fe-eKX" secondAttribute="width" multiplier="0.7" constant="1" id="qM6-Dy-Sre"/>
                             <constraint firstItem="ng1-QD-JeL" firstAttribute="leading" secondItem="Pcv-fe-eKX" secondAttribute="leading" constant="5" id="wuJ-p1-bnU"/>
+                            <constraint firstItem="DV6-DE-55p" firstAttribute="top" secondItem="ng1-QD-JeL" secondAttribute="top" id="yih-p9-dtw"/>
                         </constraints>
                     </view>
                     <connections>
@@ -644,7 +625,6 @@
         <image name="ic_logo" width="138" height="144"/>
         <image name="ic_my_corner" width="135" height="89"/>
         <image name="ic_news" width="135" height="89"/>
-        <image name="ic_red_arrow" width="25" height="25"/>
         <image name="ic_sponser" width="204" height="67"/>
         <image name="ic_stay_updated" width="135" height="89"/>
         <image name="ic_videos" width="137" height="89"/>

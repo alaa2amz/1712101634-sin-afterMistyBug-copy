@@ -88,7 +88,7 @@ class CalculatorsListViewController: UIViewController,UIGestureRecognizerDelegat
         label.autoresizingMask = .flexibleWidth
         label.numberOfLines = 0
         label.minimumScaleFactor = 0.5
-        label.text = "VTE risk assesment\nand other calculatiors"
+        label.text = "VTE risk assesment and\nother calculatiors"
         
         self.navigationItem.titleView = label
     }

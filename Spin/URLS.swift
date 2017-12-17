@@ -10,25 +10,25 @@ import Foundation
 
 enum URLS : String {
     
-    case server_ip = "http://arena-egypt.com/testbed"
+    case server_ip = "http://clexane.intermarkfileup.com/index.php/api/"
     
-    case login = "/sanofy/api/Login"
-    case register = "/sanofy/api/Register"
+    case login = "Login"
+    case register = "Register"
     
-    case areas = "/sanofy/api/Register/getAreas"
+    case areas = "getAreas"
     
-    case stay_updated = "/sanofy/api/Stayupdate/"
-    case news = "/sanofy/api/News"
-    case faq = "/sanofy/api/Faqs"
-    case asked_questions = "/sanofy/api/Questions"
-    case ask_question = "/sanofy/api/Questions/ask"
-    case about = "/sanofy/api/About"
-    case videos = "/sanofy/api/Videos"
-    case events = "/sanofy/api/Events"
-    case newsletter = "/sanofy/api/Newsletter"
-    case tips = "/sanofy/api/Mycorner"
-    case updateProfile = "/sanofy/api/User/updateProfile"
+    case stay_updated = "Stayupdate/"
+    case news = "News"
+    case faq = "Faqs"
+    case asked_questions = "Questions"
+    case ask_question = "ask"
+    case about = "About"
+    case videos = "Videos"
+    case events = "Events"
+    case newsletter = "Newsletter"
+    case tips = "Mycorner"
+    case updateProfile = "updateProfile"
     
-    case caseStudy = "/sanofy/api/CaseStudies"
-    case eCME = "/sanofy/api/Ecme"
+    case caseStudy = "CaseStudies"
+    case eCME = "Ecme"
 }
