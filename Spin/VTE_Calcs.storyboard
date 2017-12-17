@@ -1395,7 +1395,7 @@ mg/dL:</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ovarian cancer risk" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weK-HL-Ybo">
-                                                    <rect key="frame" x="87.5" y="2.5" width="146.5" height="20"/>
+                                                    <rect key="frame" x="83" y="4" width="155" height="17"/>
                                                     <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1454,7 +1454,10 @@ mg/dL:</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                             <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                             <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="makeCircular" value="NO"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="makeCircular" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                     </subviews>
@@ -1671,10 +1674,10 @@ mg/dL:</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sK-Fx-6AM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                    <rect key="frame" x="15" y="0.0" width="305" height="44"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiz-VS-r65">
-                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="152.5" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <state key="normal" title=" Premenopausal" image="ovarUnChecked">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1685,7 +1688,7 @@ mg/dL:</string>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THq-Jr-ckL">
-                                                            <rect key="frame" x="160" y="0.0" width="160" height="44"/>
+                                                            <rect key="frame" x="152.5" y="0.0" width="152.5" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <state key="normal" title=" Bilateral lesions" image="ovarUnChecked">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1706,7 +1709,7 @@ mg/dL:</string>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="2sK-Fx-6AM" secondAttribute="trailing" id="ERQ-2f-GPY"/>
                                             <constraint firstAttribute="bottom" secondItem="2sK-Fx-6AM" secondAttribute="bottom" id="GoP-e1-20r"/>
-                                            <constraint firstItem="2sK-Fx-6AM" firstAttribute="leading" secondItem="5s2-f1-Xn5" secondAttribute="leading" id="O2v-oR-L8Z"/>
+                                            <constraint firstItem="2sK-Fx-6AM" firstAttribute="leading" secondItem="5s2-f1-Xn5" secondAttribute="leading" constant="15" id="O2v-oR-L8Z"/>
                                             <constraint firstItem="2sK-Fx-6AM" firstAttribute="top" secondItem="5s2-f1-Xn5" secondAttribute="top" id="n3L-Jr-d1g"/>
                                         </constraints>
                                     </tableViewCell>
@@ -1736,7 +1739,6 @@ mg/dL:</string>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="calc:" destination="59b-PJ-UQo" eventType="touchUpInside" id="5gb-Hg-RaW"/>
-                                                        <action selector="calculateRMI:" destination="59b-PJ-UQo" eventType="touchUpInside" id="J96-F8-scg"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1785,7 +1787,7 @@ mg/dL:</string>
         <image name="ic_check" width="10" height="10"/>
         <image name="ic_vte_term1" width="540" height="43"/>
         <image name="ic_vte_title" width="720" height="60"/>
-        <image name="ovarChecked" width="33" height="33"/>
-        <image name="ovarUnChecked" width="33" height="33"/>
+        <image name="ovarChecked" width="20" height="20"/>
+        <image name="ovarUnChecked" width="20" height="20"/>
     </resources>
 </document>
