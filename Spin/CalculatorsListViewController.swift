@@ -10,13 +10,13 @@ import UIKit
 
 class CalculatorsListViewController: UIViewController,UIGestureRecognizerDelegate {
     
-    func didTap(sender: Any) {
-        print("hhhhhoooo")
-            performSegue(withIdentifier: "fromCalcsToVTE", sender: self)
-     
-        
-      
-    }
+//    func didTap(sender: Any) {
+//        print("hhhhhoooo")
+//            performSegue(withIdentifier: "fromCalcsToVTE", sender: self)
+//
+//
+//
+//    }
     
    
     
@@ -38,32 +38,51 @@ class CalculatorsListViewController: UIViewController,UIGestureRecognizerDelegat
     @IBOutlet weak var btnBMI: UIButton!
     @IBOutlet weak var btnGFR: UIButton!
     @IBOutlet weak var btnABL: UIButton!
+    @IBOutlet weak var btnRMI: UIButton!
     
     //MARK:- Variables 
     let VTE_SEGUE = "fromCalcsToVTE"
     let BMI_SEGUE = "fromCalcsToBMI"
     let GFR_SEGUE = "fromCalcsToGFR"
     let ABL_SEGUE = "fromCalcsToABL"
-    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+       
+        let VTElocation = touches.first?.location(in:self.vteView)
+        let BMIlocation = touches.first?.location(in:self.bmiView)
+        let GFRlocation = touches.first?.location(in:self.gfrView)
+        let ABLlocation = touches.first?.location(in:self.ablView)
+        let RMIlocation = touches.first?.location(in:self.rmiView)
+        
+        if vteView.frame.contains(VTElocation!) { btnVTE.sendActions(for: .touchUpInside)}
+        if bmiView.frame.contains(BMIlocation!) { btnBMI.sendActions(for: .touchUpInside)}
+        if gfrView.frame.contains(GFRlocation!) { btnGFR.sendActions(for: .touchUpInside)}
+        if ablView.frame.contains(ABLlocation!) { btnABL.sendActions(for: .touchUpInside)}
+        if rmiView.frame.contains(RMIlocation!) { btnRMI.sendActions(for: .touchUpInside)}
+            
+        
+     
+       
+        
+    }
     //MARK:- UI Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-       self.view.isUserInteractionEnabled = true
-        vteView.isUserInteractionEnabled = true
-        vteViewTap.delegate = self
-        bmiViewTap.delegate = self
-        gfrViewTap.delegate = self
-        ablViewTap.delegate = self
-        rmiViewTap.delegate = self
+//       self.view.isUserInteractionEnabled = true
+//        vteView.isUserInteractionEnabled = true
+//        vteViewTap.delegate = self
+//        bmiViewTap.delegate = self
+//        gfrViewTap.delegate = self
+//        ablViewTap.delegate = self
+//        rmiViewTap.delegate = self
        
-        rmiViewTap.addTarget(self, action: #selector(didTap))
-        vteView.addGestureRecognizer(vteViewTap)
-        bmiView.addGestureRecognizer(bmiViewTap)
-        gfrView.addGestureRecognizer(gfrViewTap)
-        ablView.addGestureRecognizer(gfrViewTap)
-        rmiView.addGestureRecognizer(rmiViewTap)
+//        rmiViewTap.addTarget(self, action: #selector(didTap))
+//        vteView.addGestureRecognizer(vteViewTap)
+//        bmiView.addGestureRecognizer(bmiViewTap)
+//        gfrView.addGestureRecognizer(gfrViewTap)
+//        ablView.addGestureRecognizer(gfrViewTap)
+//        rmiView.addGestureRecognizer(rmiViewTap)
 
         // Do any additional setup after loading the view.
         configurePageTitle()

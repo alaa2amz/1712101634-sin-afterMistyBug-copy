@@ -22,6 +22,7 @@
             <connections>
                 <outlet property="alertMaskBackground" destination="TJU-qf-UNT" id="afj-Od-QWH"/>
                 <outlet property="alertView" destination="MnE-em-fL1" id="NjJ-1F-nt8"/>
+                <outlet property="azMessage" destination="eFC-iX-lFz" id="bG5-7V-Byx"/>
                 <outlet property="labelResult" destination="NjE-EJ-o67" id="9kP-ck-bjd"/>
             </connections>
         </placeholder>
@@ -119,15 +120,24 @@
                             <nil key="textColor"/>
                             <color key="highlightedColor" red="0.28425365689999998" green="0.40981698039999997" blue="0.66709113119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFC-iX-lFz">
+                            <rect key="frame" x="39" y="213" width="179" height="77"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="5e2-Gb-DOk" firstAttribute="leading" secondItem="MnE-em-fL1" secondAttribute="leadingMargin" id="1ln-4Q-tQZ"/>
+                        <constraint firstItem="ROE-2Q-jGM" firstAttribute="top" secondItem="eFC-iX-lFz" secondAttribute="bottom" constant="23" id="2BX-Is-myW"/>
                         <constraint firstAttribute="trailing" secondItem="ROE-2Q-jGM" secondAttribute="trailing" constant="22" id="CAQ-8c-CDc"/>
+                        <constraint firstItem="eFC-iX-lFz" firstAttribute="top" secondItem="zXy-wN-irW" secondAttribute="bottom" constant="8" symbolic="YES" id="DrN-2j-7pf"/>
                         <constraint firstItem="zXy-wN-irW" firstAttribute="top" secondItem="3Rb-0a-WiM" secondAttribute="bottom" constant="22" id="Hvy-2w-jeJ"/>
                         <constraint firstItem="5e2-Gb-DOk" firstAttribute="trailing" secondItem="Fcf-Lw-JGI" secondAttribute="trailing" id="IYa-D5-Mc4"/>
                         <constraint firstAttribute="trailing" secondItem="Fcf-Lw-JGI" secondAttribute="trailing" id="RN4-4h-o7k"/>
                         <constraint firstItem="3Rb-0a-WiM" firstAttribute="top" secondItem="uQj-CJ-YUA" secondAttribute="bottom" constant="8" id="RXm-jj-hcc"/>
+                        <constraint firstItem="eFC-iX-lFz" firstAttribute="leading" secondItem="MnE-em-fL1" secondAttribute="leading" constant="39" id="T5L-bH-82V"/>
                         <constraint firstAttribute="trailing" secondItem="3Rb-0a-WiM" secondAttribute="trailing" constant="22" id="eOA-3A-txc"/>
                         <constraint firstItem="5e2-Gb-DOk" firstAttribute="top" secondItem="ROE-2Q-jGM" secondAttribute="bottom" id="gBn-TR-Dtc"/>
                         <constraint firstAttribute="trailing" secondItem="zXy-wN-irW" secondAttribute="trailing" constant="33" id="hKw-lJ-Lq1"/>
@@ -135,6 +145,7 @@
                         <constraint firstItem="ROE-2Q-jGM" firstAttribute="leading" secondItem="MnE-em-fL1" secondAttribute="leading" constant="22" id="lfU-Kc-bMI"/>
                         <constraint firstItem="uQj-CJ-YUA" firstAttribute="height" secondItem="Fcf-Lw-JGI" secondAttribute="height" id="lg1-CY-Iwn"/>
                         <constraint firstItem="Fcf-Lw-JGI" firstAttribute="top" secondItem="MnE-em-fL1" secondAttribute="top" id="n9b-vd-DVq"/>
+                        <constraint firstItem="eFC-iX-lFz" firstAttribute="centerX" secondItem="ROE-2Q-jGM" secondAttribute="centerX" id="nO6-FP-8LV"/>
                         <constraint firstItem="zXy-wN-irW" firstAttribute="leading" secondItem="MnE-em-fL1" secondAttribute="leading" constant="33" id="qLu-gZ-rtE"/>
                         <constraint firstItem="uQj-CJ-YUA" firstAttribute="top" secondItem="MnE-em-fL1" secondAttribute="top" id="qkR-uw-6SI"/>
                         <constraint firstAttribute="bottom" secondItem="5e2-Gb-DOk" secondAttribute="bottom" constant="18" id="r9G-rH-LpX"/>

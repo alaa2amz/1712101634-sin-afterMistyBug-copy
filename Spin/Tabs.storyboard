@@ -35,7 +35,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gQH-zd-Wl1">
                                 <rect key="frame" x="21" y="132" width="278" height="240"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybq-i1-ECg">
+                                    <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybq-i1-ECg">
                                         <rect key="frame" x="0.0" y="0.0" width="278" height="47"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUm-jm-WjS">
@@ -263,6 +263,7 @@
                         <outlet property="btnABL" destination="zD2-ax-hS5" id="5k7-uZ-zQ0"/>
                         <outlet property="btnBMI" destination="sm3-GW-wOB" id="Luo-VW-Qbh"/>
                         <outlet property="btnGFR" destination="1fZ-Om-UF9" id="ptq-3n-8CK"/>
+                        <outlet property="btnRMI" destination="gNw-cf-UfU" id="mMU-48-bKr"/>
                         <outlet property="btnVTE" destination="pyx-lE-HkW" id="A9D-ka-0Mb"/>
                         <outlet property="gfrView" destination="06T-Wx-Mzi" id="fFR-36-fza"/>
                         <outlet property="rmiView" destination="pCp-B5-oSf" id="lvS-aX-I8c"/>

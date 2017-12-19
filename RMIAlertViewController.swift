@@ -8,8 +8,11 @@
 
 import UIKit
 
-class RMIAlertViewController: UIViewController {
+class RMIAlertViewController: BaseViewController {
+    
+    
     // MARK: Properties
+    var comment = ""
     @IBOutlet weak open var alertMaskBackground: UIImageView!
     @IBOutlet weak open var alertView: UIView!
     var animator : UIDynamicAnimator?
@@ -20,6 +23,7 @@ class RMIAlertViewController: UIViewController {
     @IBOutlet weak var refThreeImg: UIImageView!
     @IBOutlet weak var labelResult: UILabel!
     
+    @IBOutlet weak var azMessage: UILabel!
     open var gravityDismissAnimation = true
     
     var isFemale: Bool = false
@@ -32,8 +36,9 @@ class RMIAlertViewController: UIViewController {
     
     //MARK: - Initialiser
     @objc public convenience init(result : String, resultComments : String) {
-        
+      
         self.init()
+          comment = resultComments
         let nib = loadNibAlertController()
         if nib != nil{
             self.view = nib![0] as! UIView
@@ -112,6 +117,8 @@ class RMIAlertViewController: UIViewController {
     
     //SET DATA
     func setData(value: Float) {
+        self.azMessage.text = self.comment
+        
         if isFemale {
             if isPregnant {
                 if (value>=30){
@@ -177,3 +184,8 @@ class RMIAlertViewController: UIViewController {
         }
     }
 }
+
+
+
+
+

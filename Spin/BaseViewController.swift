@@ -32,7 +32,7 @@ class BaseViewController: UIViewController {
     }
     
     
-    func dismissKeyboard() {
+     func dismissKeyboard() {
         self.view.endEditing(true)
     }
     

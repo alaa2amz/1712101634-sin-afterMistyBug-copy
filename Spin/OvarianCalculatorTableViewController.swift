@@ -8,9 +8,14 @@
 
 import UIKit
 
-class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDelegate {
+class OvarianCalculatorTableViewController: UITableViewController {
+    
    
+    
+    
+    
    
+    
     //MARK: iB Outlets
     @IBOutlet weak var resultDigitLabel: UILabel!
     @IBOutlet weak var serumValueField: UITextField!
@@ -86,7 +91,7 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
         ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
         print( String(ovarianCancerCalculator.getRmi()))
         let rmi = ovarianCancerCalculator.getRmi()
-        let vc = RMIAlertViewController(result: rmi<limit ? "Benign":"Malignt", resultComments: "tyuio")
+        let vc = RMIAlertViewController(result: rmi<limit ? "Benign":"Malignt", resultComments: rmi<limit ? "RMI I indicates low risk of malignancy.":"RMI I indicates increased risk of malignancy")
         self.present(vc, animated: true, completion: nil)
     }
     
@@ -110,7 +115,15 @@ class OvarianCalculatorTableViewController: UITableViewController,UITextFieldDel
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       print("hjjkujtjt")
+        serumValueField.resignFirstResponder()
+        let cview :Bool = touches.first?.view is  UITextInputTraits
+        
+        if !cview { self.view.endEditing(true)
+            serumValueField.resignFirstResponder()
+        }
+    }
 
-    
+
 }

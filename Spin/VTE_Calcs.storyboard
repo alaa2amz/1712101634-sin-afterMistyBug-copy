@@ -1380,7 +1380,7 @@ mg/dL:</string>
         <scene sceneID="aIj-du-4K2">
             <objects>
                 <tableViewController storyboardIdentifier="ovarianCalculator" title="ovarian" id="59b-PJ-UQo" customClass="OvarianCalculatorTableViewController" customModule="Spin" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7aN-P5-IZp">
+                    <tableView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7aN-P5-IZp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1395,7 +1395,7 @@ mg/dL:</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ovarian cancer risk" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weK-HL-Ybo">
-                                                    <rect key="frame" x="83" y="4" width="155" height="17"/>
+                                                    <rect key="frame" x="87" y="2.5" width="146.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1452,7 +1452,7 @@ mg/dL:</string>
                                                             </constraints>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="makeCircular" value="YES"/>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
@@ -1778,7 +1778,7 @@ mg/dL:</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEq-2t-ZYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6616.875" y="1.056338028169014"/>
+            <point key="canvasLocation" x="6626" y="2"/>
         </scene>
     </scenes>
     <resources>

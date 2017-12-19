@@ -11,7 +11,6 @@
 		000572341FDEF665004B070A /* VTEDOSEAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000572321FDEF664004B070A /* VTEDOSEAlertViewController.xib */; };
 		000572351FDEF665004B070A /* VTEDOSEAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000572331FDEF665004B070A /* VTEDOSEAlertViewController.swift */; };
 		00095F291FD6F77B00056EE3 /* CornerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00095F281FD6F77B00056EE3 /* CornerCell.swift */; };
-		0075A42D1FE15A440034362E /* RMIAlertViewController in Resources */ = {isa = PBXBuildFile; fileRef = 0075A42C1FE15A440034362E /* RMIAlertViewController */; };
 		0075A4331FE15F980034362E /* RMIAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0075A4311FE15F970034362E /* RMIAlertViewController.swift */; };
 		0075A4341FE15F980034362E /* RMIAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0075A4321FE15F980034362E /* RMIAlertViewController.xib */; };
 		61A94DE51FDC1709003805DB /* OvarianCalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A94DE41FDC1709003805DB /* OvarianCalculatorTableViewController.swift */; };
@@ -179,13 +178,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0005722F1FDEE7C2004B070A /* VTEdosageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTEdosageTableViewController.swift; sourceTree = "<group>"; };
+		0005722F1FDEE7C2004B070A /* VTEdosageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VTEdosageTableViewController.swift; path = ../VTEdosageTableViewController.swift; sourceTree = "<group>"; };
 		000572321FDEF664004B070A /* VTEDOSEAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VTEDOSEAlertViewController.xib; sourceTree = "<group>"; };
 		000572331FDEF665004B070A /* VTEDOSEAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTEDOSEAlertViewController.swift; sourceTree = "<group>"; };
 		00095F281FD6F77B00056EE3 /* CornerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerCell.swift; sourceTree = "<group>"; };
-		0075A42C1FE15A440034362E /* RMIAlertViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RMIAlertViewController; sourceTree = "<group>"; };
-		0075A4311FE15F970034362E /* RMIAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMIAlertViewController.swift; sourceTree = "<group>"; };
-		0075A4321FE15F980034362E /* RMIAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMIAlertViewController.xib; sourceTree = "<group>"; };
+		0075A4311FE15F970034362E /* RMIAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMIAlertViewController.swift; path = ../RMIAlertViewController.swift; sourceTree = "<group>"; };
+		0075A4321FE15F980034362E /* RMIAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RMIAlertViewController.xib; path = ../RMIAlertViewController.xib; sourceTree = "<group>"; };
 		593B87FA8CE7C5CDD45C7DCF /* Pods-Spin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spin/Pods-Spin.release.xcconfig"; sourceTree = "<group>"; };
 		61A94DE41FDC1709003805DB /* OvarianCalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvarianCalculatorTableViewController.swift; sourceTree = "<group>"; };
 		61A94DE61FDC285E003805DB /* ovarianCancerGuideLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ovarianCancerGuideLogic.swift; sourceTree = "<group>"; };
@@ -381,6 +379,15 @@
 			path = VTEDOSEAlertViewController;
 			sourceTree = "<group>";
 		};
+		0005A35C1FE9568800F30704 /* RMI alert */ = {
+			isa = PBXGroup;
+			children = (
+				0075A4311FE15F970034362E /* RMIAlertViewController.swift */,
+				0075A4321FE15F980034362E /* RMIAlertViewController.xib */,
+			);
+			name = "RMI alert";
+			sourceTree = "<group>";
+		};
 		0020893B1FE681C4002EC6C9 /* RMI */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,7 +451,7 @@
 		6BAEFC521E290F0900F05F50 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				0075A42C1FE15A440034362E /* RMIAlertViewController */,
+				0005A35C1FE9568800F30704 /* RMI alert */,
 				C53A3F7D1E50EB6E009C4B42 /* Question Alert */,
 				C513E4071E3FCD9E002D405E /* ABL Alert */,
 				C513E3FB1E3FAED9002D405E /* GFR Alert */,
@@ -465,12 +472,9 @@
 		AB3D0D681E26EA5900563EEE = {
 			isa = PBXGroup;
 			children = (
-				0005722F1FDEE7C2004B070A /* VTEdosageTableViewController.swift */,
 				61C22BAC1FDB4FD10022319D /* CollapsibleTableSectionViewController.h */,
 				61C22BAD1FDB4FD10022319D /* CollapsibleTableSectionViewController.swift */,
 				61C22BAE1FDB4FD10022319D /* CollapsibleTableViewHeader.swift */,
-				0075A4311FE15F970034362E /* RMIAlertViewController.swift */,
-				0075A4321FE15F980034362E /* RMIAlertViewController.xib */,
 				AB3D0D731E26EA5A00563EEE /* Spin */,
 				AB3D0D721E26EA5A00563EEE /* Products */,
 				568EC482C5F1B29B981B3BAE /* Pods */,
@@ -506,6 +510,7 @@
 		AB3D0D891E26EA7200563EEE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6BAEFC521E290F0900F05F50 /* Alerts */,
 				C59AAC391E4F1F0000106866 /* More Tab */,
 				C5DF2A1C1E4DD8C300CADE50 /* About Sanofi */,
 				C513E40E1E3FD890002D405E /* Stay Updated */,
@@ -597,7 +602,6 @@
 				C5D3E2D81E462BF200EA53B9 /* Dropdown */,
 				C5D406901E323F6B004956B5 /* ALLoadingView */,
 				AB3D0D921E26EFBB00563EEE /* ACFloatingTextField */,
-				6BAEFC521E290F0900F05F50 /* Alerts */,
 				AB3D0D8F1E26ECA900563EEE /* Extensions */,
 				6B70A9111E2958D5005DB256 /* Fonts */,
 				6BAEFC4B1E290E5D00F05F50 /* PMAlert */,
@@ -879,6 +883,7 @@
 		C5C461411E3CA526001CFFA1 /* VTE */ = {
 			isa = PBXGroup;
 			children = (
+				0005722F1FDEE7C2004B070A /* VTEdosageTableViewController.swift */,
 				C5C461421E3CA5EF001CFFA1 /* Cells */,
 				C5C4613F1E3CA507001CFFA1 /* VTECalculatorViewController.swift */,
 				C5C461491E3CA8F9001CFFA1 /* VTETableDelegate.swift */,
@@ -1070,7 +1075,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				000572341FDEF665004B070A /* VTEDOSEAlertViewController.xib in Resources */,
-				0075A42D1FE15A440034362E /* RMIAlertViewController in Resources */,
 				C543A61C1E3D073F00438D04 /* BMIAlertViewController.xib in Resources */,
 				C5D3E2DC1E462C2B00EA53B9 /* DropdownViewController.xib in Resources */,
 				C513E40D1E3FCDDE002D405E /* ABLAlertViewController.xib in Resources */,
@@ -1427,7 +1431,7 @@
 				INFOPLIST_FILE = Spin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.intermarkcorp2.spin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intermarkcorp.spin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Spin/Spin-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1448,7 +1452,7 @@
 				INFOPLIST_FILE = Spin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.intermarkcorp2.spin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intermarkcorp.spin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Spin/Spin-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
