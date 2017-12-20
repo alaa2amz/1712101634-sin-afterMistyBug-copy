@@ -87,8 +87,10 @@ class GFRCalcViewController: BaseViewController {
         if age == 0.0 || serum == 0.0 {
             self.show(error: "Please Enter Valid Values")
         } else {
-            let result = stateController.getGFRResults(age: age, serum: serum, other: selectedIndex == 1)
-            
+            let result = stateController.getGFRResults(age: age, serum: serum, other: selectedIndex == 1,sex:self.isMale)
+            print("---")
+            print(result.result!)
+            print(result.resultComments!)
             let vc = GFRAlertViewController(result: result.result!, resultComments: result.resultComments!)
             self.present(vc, animated: true, completion: nil)
         }

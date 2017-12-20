@@ -26,11 +26,11 @@ class CalculatorsListViewController: UIViewController,UIGestureRecognizerDelegat
     @IBOutlet weak var gfrView: UIView!
     @IBOutlet weak var ablView: UIView!
     @IBOutlet weak var rmiView: UIView!
-    var vteViewTap = UITapGestureRecognizer()
-    var bmiViewTap = UITapGestureRecognizer()
-     var gfrViewTap = UITapGestureRecognizer()
-     var ablViewTap = UITapGestureRecognizer()
-     var rmiViewTap = UITapGestureRecognizer()
+//    var vteViewTap = UITapGestureRecognizer()
+//    var bmiViewTap = UITapGestureRecognizer()
+//     var gfrViewTap = UITapGestureRecognizer()
+//     var ablViewTap = UITapGestureRecognizer()
+//     var rmiViewTap = UITapGestureRecognizer()
     
     
     //MARK:- IBOutlets
@@ -47,18 +47,18 @@ class CalculatorsListViewController: UIViewController,UIGestureRecognizerDelegat
     let ABL_SEGUE = "fromCalcsToABL"
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
        
-        let VTElocation = touches.first?.location(in:self.vteView)
-        let BMIlocation = touches.first?.location(in:self.bmiView)
-        let GFRlocation = touches.first?.location(in:self.gfrView)
-        let ABLlocation = touches.first?.location(in:self.ablView)
-        let RMIlocation = touches.first?.location(in:self.rmiView)
+//        let VTElocation = touches.first?.location(in:self.vteView)
+//        let BMIlocation = touches.first?.location(in:self.bmiView)
+//        let GFRlocation = touches.first?.location(in:self.gfrView)
+//        let ABLlocation = touches.first?.location(in:self.ablView)
+//        let RMIlocation = touches.first?.location(in:self.rmiView)
+//
+//        if vteView.frame.contains(VTElocation!) { btnVTE.sendActions(for: .touchUpInside)}
+//        if bmiView.frame.contains(BMIlocation!) { btnBMI.sendActions(for: .touchUpInside)}
+//        if gfrView.frame.contains(GFRlocation!) { btnGFR.sendActions(for: .touchUpInside)}
+//        if ablView.frame.contains(ABLlocation!) { btnABL.sendActions(for: .touchUpInside)}
+//        if rmiView.frame.contains(RMIlocation!) { btnRMI.sendActions(for: .touchUpInside)}
         
-        if vteView.frame.contains(VTElocation!) { btnVTE.sendActions(for: .touchUpInside)}
-        if bmiView.frame.contains(BMIlocation!) { btnBMI.sendActions(for: .touchUpInside)}
-        if gfrView.frame.contains(GFRlocation!) { btnGFR.sendActions(for: .touchUpInside)}
-        if ablView.frame.contains(ABLlocation!) { btnABL.sendActions(for: .touchUpInside)}
-        if rmiView.frame.contains(RMIlocation!) { btnRMI.sendActions(for: .touchUpInside)}
-            
         
      
        

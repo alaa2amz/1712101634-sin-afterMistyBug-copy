@@ -49,10 +49,14 @@ class RMIAlertViewController: BaseViewController {
         
         alertView.layer.cornerRadius = 5
         setShadowAlertView()
-        
+         self.azMessage.text = self.comment
         labelResult.text = result
     }
     
+    
+    override func viewDidLoad() {
+         self.azMessage.text = self.comment
+    }
     //MARK: - Actions
     @objc fileprivate func dismissAlertController(_ sender: UIButton){
         self.animateDismissWithGravity(.cancel)
@@ -71,6 +75,7 @@ class RMIAlertViewController: BaseViewController {
     }
     
     @objc fileprivate func loadNibAlertController() -> [AnyObject]?{
+        //self.azMessage.text = self.comment
         let podBundle = Bundle(for: self.classForCoder)
         
         if let bundleURL = podBundle.url(forResource: "RMIAlertViewController", withExtension: "bundle"){

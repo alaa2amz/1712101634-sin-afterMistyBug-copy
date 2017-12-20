@@ -24,6 +24,7 @@ class SignupViewController: BaseViewController {
     //MARK:- UI Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        textFieldComments.isHidden = true
         
         // Do any additional setup after loading the view.
         stateController = SignUpStateController()

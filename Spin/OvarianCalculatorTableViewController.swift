@@ -91,7 +91,7 @@ class OvarianCalculatorTableViewController: UITableViewController {
         ovarianCancerCalculator.ultraSoundScore = ultrasonic.ultraSoundScoreValue
         print( String(ovarianCancerCalculator.getRmi()))
         let rmi = ovarianCancerCalculator.getRmi()
-        let vc = RMIAlertViewController(result: rmi<limit ? "Benign":"Malignt", resultComments: rmi<limit ? "RMI I indicates low risk of malignancy.":"RMI I indicates increased risk of malignancy")
+        let vc = RMIAlertViewController(result: String(rmi), resultComments: rmi<limit ? "RMI I indicates low risk of malignancy.":"RMI I indicates increased risk of malignancy")
         self.present(vc, animated: true, completion: nil)
     }
     
