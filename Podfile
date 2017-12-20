@@ -8,6 +8,6 @@ target 'Spin' do
    pod 'SideMenu'
    pod 'DZNWebViewController'
    pod 'JTAppleCalendar', '~> 6.0'
-   pod 'IQKeyboardManagerSwift', '4.0.8'
+   pod 'IQKeyboardManagerSwift', '~> 5.0'
    pod 'ExpandableCell','~> 1.2.1'
 end

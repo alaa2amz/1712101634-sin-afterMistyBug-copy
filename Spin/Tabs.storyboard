@@ -270,7 +270,7 @@
                         <outlet property="vteView" destination="Ybq-i1-ECg" id="D3Q-Hf-Fij"/>
                         <segue destination="MpX-em-auR" kind="show" identifier="fromCalcsToVTE" id="3qg-Bc-26t"/>
                         <segue destination="zEL-Ol-2vh" kind="show" identifier="fromCalcsToBMI" id="klX-bH-cFX"/>
-                        <segue destination="jMN-EY-rjR" kind="show" identifier="fromCalcsToGFR" id="21X-No-vy0"/>
+                        <segue destination="jMN-EY-rjR" kind="show" identifier="fromCalcsToGFR2" id="21X-No-vy0"/>
                         <segue destination="COb-wD-pwJ" kind="show" identifier="fromCalcsToABL" id="Dwr-Tj-JdE"/>
                     </connections>
                 </viewController>
@@ -1414,19 +1414,19 @@
                                         <rect key="frame" x="8" y="8" width="304" height="39"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ask_logo" translatesAutoresizingMaskIntoConstraints="NO" id="fRb-J7-H6V">
-                                                <rect key="frame" x="62" y="1" width="47" height="43"/>
+                                                <rect key="frame" x="62" y="1" width="47" height="37"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="47" id="Iur-IJ-2Q5"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask a Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-Ge-I3j">
-                                                <rect key="frame" x="117" y="8" width="115" height="29"/>
+                                                <rect key="frame" x="117" y="8" width="115" height="23"/>
                                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZ4-PA-xJf">
-                                                <rect key="frame" x="245" y="8" width="51" height="29"/>
+                                                <rect key="frame" x="245" y="8" width="51" height="23"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="51" id="kFJ-LB-5OB"/>
                                                 </constraints>
