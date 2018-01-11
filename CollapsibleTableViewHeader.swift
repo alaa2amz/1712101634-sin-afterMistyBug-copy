@@ -24,13 +24,13 @@ open class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         super.init(reuseIdentifier: reuseIdentifier)
         
         // Content View
-        contentView.backgroundColor = UIColor(hex: 0x2E3944)
+        contentView.backgroundColor = UIColor.white
         
         let marginGuide = contentView.layoutMarginsGuide
         
         // Arrow label
         contentView.addSubview(arrowLabel)
-        arrowLabel.textColor = UIColor.white
+        arrowLabel.textColor = UIColor.red
         arrowLabel.translatesAutoresizingMaskIntoConstraints = false
         arrowLabel.widthAnchor.constraint(equalToConstant: 12).isActive = true
         arrowLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true

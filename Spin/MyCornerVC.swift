@@ -53,12 +53,14 @@ class MyCornerVC: BaseViewController,CollapsibleTableViewHeaderDelegate,UITableV
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
         header.titleLabel.text = self.tableHandler.stateController.myCornerData[section].corner
-        header.arrowLabel.text = ">"
+         header.titleLabel.textColor = UIColor.blue
+        header.arrowLabel.text = "▶"
+        header.arrowLabel.textColor = UIColor.orange
         header.setCollapsed(isCollappsed[section])
         
         header.section = section
         header.delegate = self
-        
+        header.borderColor = UIColor.white
         return header
     }
     

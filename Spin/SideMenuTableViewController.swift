@@ -11,7 +11,7 @@ import SideMenu
 
 class SideMenuTableViewController: UITableViewController {
     //MARK: - variables
-    let delegate = UIApplication.shared.delegate
+    let delegate = UIApplication.shared.delegate as! AppDelegate
     let profileCellIdentifier = "ProfileCell"
     let optionCellIdentifier = "OptionsCell"
     let HOME_SEGUE = "fromTabBarToHome"
@@ -29,7 +29,8 @@ class SideMenuTableViewController: UITableViewController {
         
         self.tableView.tableFooterView = UIView()
       
-        userName.text = "all"
+        userName.text = delegate.userName
+        
         
         
         

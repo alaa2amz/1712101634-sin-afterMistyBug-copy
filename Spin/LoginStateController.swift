@@ -10,7 +10,8 @@ import Foundation
 import Alamofire
 
 class LoginStateController {
-    //MARK:- Variables 
+    //MARK:- Variables
+    var delegate = UIApplication.shared.delegate as! AppDelegate
     var isRemmebered : Bool = false
     var username : String = ""
     var password : String = ""
@@ -53,6 +54,7 @@ class LoginStateController {
                         LoginStateController.userData = serverResponse.loginData
                         LoginStateController.userData.password = self.password
                         LoginStateController.userData.username = self.username
+                        self.delegate.userName = serverResponse.loginData.name!
                         if self.isRemmebered  {
                             LoginStateController.saveUserDefaults()
                         }
