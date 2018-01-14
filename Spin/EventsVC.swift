@@ -134,7 +134,7 @@ class EventsVC: BaseViewController {
         label.font = UIFont(name: "Nexa Light", size: 22.0)
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.white
-        label.text = "News and Events Calendar"
+        label.text = "News and Events"
         
         self.navigationItem.titleView = label
         self.navigationController?.navigationBar.tintColor = UIColor.white

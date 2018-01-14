@@ -31,7 +31,8 @@ class UpdatesTableDataSource : NSObject, UITableViewDataSource {
         let currentPost = stateController.filteredPosts[indexPath.row]
         cell.labelTitle.text = currentPost.title
         cell.labelBody.text = currentPost.body
-        cell.labelDate.text = currentPost.createdDate
+        
+        cell.labelDate.text? = String(currentPost.createdDate.components(separatedBy: " ")[0])
         
         let url = URL(string: currentPost.image)!
         cell.imageViewPic.hnk_setImageFromURL(url)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TPT-A4-p1X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TPT-A4-p1X">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,12 +29,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="087-Jq-St5" userLabel="Header">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="087-Jq-St5" userLabel="Header">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_vte_title" translatesAutoresizingMaskIntoConstraints="NO" id="dlW-mb-RQn">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,7 +179,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEm-Zw-xsN">
-                                            <rect key="frame" x="17" y="11" width="106" height="30"/>
+                                            <rect key="frame" x="9" y="8" width="106" height="35.5"/>
                                             <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="106" id="F3B-Jr-Pqj"/>
@@ -189,7 +189,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="759-mB-gOP">
-                                            <rect key="frame" x="17" y="11" width="106" height="30"/>
+                                            <rect key="frame" x="9" y="8" width="106" height="35.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="106" id="hqI-l0-TL4"/>
                                             </constraints>
@@ -198,10 +198,10 @@
                                             </connections>
                                         </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NNw-Ca-6Wp">
-                                            <rect key="frame" x="131" y="11" width="173" height="30"/>
+                                            <rect key="frame" x="123" y="8" width="189" height="35.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pef-HP-xOD">
-                                            <rect key="frame" x="131" y="11" width="173" height="30"/>
+                                            <rect key="frame" x="123" y="8" width="189" height="35.5"/>
                                             <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -236,8 +236,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="275.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CV-Gu-paW">
-                                            <rect key="frame" x="16" y="11" width="288" height="45"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2CV-Gu-paW">
+                                            <rect key="frame" x="8" y="8" width="304" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="45" id="1Jn-fy-dzY"/>
                                             </constraints>
@@ -246,14 +246,14 @@
                                                     <string key="content">*If the known low-risk thrombophilia is in a woman with a family history of VTE in a first-degree relative postpartum thromboprophylaxis should be continued for 6 weeks.</string>
                                                     <attributes>
                                                         <font key="NSFont" metaFont="smallSystem"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" tighteningFactorForTruncation="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="1" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD5-cM-2ps">
-                                            <rect key="frame" x="16" y="58" width="288" height="45"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CD5-cM-2ps">
+                                            <rect key="frame" x="8" y="55" width="304" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="45" id="PEM-oS-DFg"/>
                                             </constraints>
@@ -262,14 +262,14 @@
                                                     <string key="content">Abbreviations: ART: Assisted reproductive technologies; IVF: In vitro fertilization; OHSS: Ovarian hyperstimulation syndrome; VTE: Venous thromboembolism</string>
                                                     <attributes>
                                                         <font key="NSFont" metaFont="smallSystem"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" tighteningFactorForTruncation="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="1" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phasing your patient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sb-D9-7xP">
-                                            <rect key="frame" x="24" y="107" width="280" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phasing your patient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Sb-D9-7xP">
+                                            <rect key="frame" x="16" y="104" width="296" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="4dd-Uv-W1g"/>
                                             </constraints>
@@ -278,10 +278,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZTF-Me-k1q">
-                                            <rect key="frame" x="24" y="135" width="272" height="40"/>
+                                            <rect key="frame" x="16" y="132" width="288" height="40"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml1-kd-lE1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="40"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="40"/>
                                                     <color key="backgroundColor" red="0.22352941179999999" green="0.32156862749999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                                     <state key="normal" title="Antenatal">
@@ -292,7 +292,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-6C-eHe">
-                                                    <rect key="frame" x="137" y="0.0" width="135" height="40"/>
+                                                    <rect key="frame" x="145" y="0.0" width="143" height="40"/>
                                                     <color key="backgroundColor" red="0.22352941179999999" green="0.32156862749999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                                     <state key="normal" title="Postnatal">
@@ -309,7 +309,7 @@
                                             </constraints>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zi1-nR-bGa">
-                                            <rect key="frame" x="16" y="223" width="288" height="42"/>
+                                            <rect key="frame" x="8" y="220" width="304" height="47.5"/>
                                             <attributedString key="attributedText">
                                                 <fragment>
                                                     <string key="content">Reproduced from: Royal College of Obstetricians and Gynaecologists. Reducing the Risk of Venous Thromboembolism during Pregnancy and the Puerperium, Green-top Guideline No. 37a. London: RCOG; 2015, with the permission of the Royal College of Obstetricians and Gynaecologists.</string>
@@ -322,7 +322,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LB-nD-zLD">
-                                            <rect key="frame" x="24" y="177" width="272" height="40"/>
+                                            <rect key="frame" x="16" y="174" width="288" height="40"/>
                                             <color key="backgroundColor" red="0.28425365686416626" green="0.40981698036193848" blue="0.66709113121032715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                             <state key="normal" title="Determine the recomended dose ">
@@ -421,7 +421,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-pj-Lm0">
                                                 <rect key="frame" x="0.0" y="0.0" width="254" height="30"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height(m):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVb-gq-aRd">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height(cm):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVb-gq-aRd">
                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="30"/>
                                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -725,16 +725,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJg-az-QFc">
-                                                    <rect key="frame" x="36" y="35" width="248" height="30"/>
+                                                    <rect key="frame" x="28" y="32" width="264" height="36"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight (kg):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrE-Ez-nId">
-                                                            <rect key="frame" x="0.0" y="0.0" width="188" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="204" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zsl-pm-f5v">
-                                                            <rect key="frame" x="188" y="0.0" width="60" height="30"/>
+                                                            <rect key="frame" x="204" y="0.0" width="60" height="36"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="fWa-By-IhI"/>
                                                             </constraints>
@@ -771,10 +771,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8b2-vy-VPp">
-                                                    <rect key="frame" x="26" y="35" width="268" height="30"/>
+                                                    <rect key="frame" x="18" y="32" width="284" height="36"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pku-ti-kbP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="268" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="284" height="36"/>
                                                             <color key="backgroundColor" red="0.28425365686416626" green="0.40981698036193848" blue="0.66709113121032715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" title="Determine the recommended dose">
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1395,7 +1395,7 @@ mg/dL:</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ovarian cancer risk" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weK-HL-Ybo">
-                                                    <rect key="frame" x="83.5" y="4" width="155" height="17"/>
+                                                    <rect key="frame" x="83" y="4" width="155" height="17"/>
                                                     <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1721,7 +1721,7 @@ mg/dL:</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fc-bv-W1n">
-                                                    <rect key="frame" x="16" y="9" width="288" height="28"/>
+                                                    <rect key="frame" x="8" y="11.5" width="304" height="28"/>
                                                     <color key="backgroundColor" red="0.28801721334457397" green="0.40841913223266602" blue="0.66785335540771484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27.5" id="5be-vD-nAO"/>
