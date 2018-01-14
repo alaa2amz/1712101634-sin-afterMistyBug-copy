@@ -103,6 +103,11 @@ class OvarianCalculatorTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        
+        
+        
         //alertController.addAction(alertAction)
         ultrasonic = UltraSoundScan()
         preMenopausalButton.isSelected = true

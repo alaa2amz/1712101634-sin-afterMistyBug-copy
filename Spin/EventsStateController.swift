@@ -58,6 +58,9 @@ class EventsStateController {
                 }
                 
                 if let data = response.result.value as? NSDictionary {
+                   print("----|||----")
+                    print(response.result.value)
+                    
                     let serverResponse : ServerResponse = ServerResponse(fromDictionary: data)
                     
                     if serverResponse.code == "1" {

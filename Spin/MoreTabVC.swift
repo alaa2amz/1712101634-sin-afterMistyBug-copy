@@ -64,7 +64,7 @@ class MoreTabVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             cell.imageViewImage.image = UIImage(named: "")
             break
         case 2:
-            cell.labelTitle.text = "Video Conferences"
+            cell.labelTitle.text = "Videos"
             cell.imageViewImage.image = UIImage(named: "")
             break
         case 3:
